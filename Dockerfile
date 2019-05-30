@@ -1,9 +1,9 @@
+ENV http_proxy=http://192.168.10.15:8080
+ENV https_proxy=http://192.168.10.15:8080
+
 FROM openanalytics/r-base
 
 MAINTAINER rron Lacey
-
-ENV http_proxy=http://192.168.10.15:8080
-ENV https_proxy=http://192.168.10.15:8080
 
 # system libraries of general use
 RUN apt-get update && apt-get install -y \
