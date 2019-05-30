@@ -1,0 +1,10 @@
+stages:
+- name: Build
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: swanseauniversity/UMLSbrowser
+      registry: 127.0.0.1:34551
+timeout: 60
+notification: {}
