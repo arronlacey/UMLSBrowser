@@ -4,7 +4,6 @@ rm(list = ls())
 library(shiny)
 library(dplyr)
 library(DT)
-library(plumber)
 umls <- dbConnect(drv=RSQLite::SQLite(), 
                   dbname="umls_browser.sqlite3")
 licenseCode <- "NLM-407569992"
