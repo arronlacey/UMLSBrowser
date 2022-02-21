@@ -6,7 +6,7 @@ library(dplyr)
 library(DT)
 umls <- dbConnect(drv=RSQLite::SQLite(), 
                   dbname="umls_browser.sqlite3")
-licenseCode <- "NLM-407569992"
+licenseCode <- < code read into here>
 
 
 shinyServer(function(input, output) {
